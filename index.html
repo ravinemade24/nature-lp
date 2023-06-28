@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sliders</title>
+
+    <!-- All css -->
+
+    <!-- fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icons css -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <!-- main css -->
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <!-- header start -->
+
+    <header>
+      <div class="nav_bar">
+        <a href="#" class="logo">Nature</a>
+        <div class="navigation">
+          <div class="nav_items">
+            <i class="uil uil-times nav_close_btn"></i>
+            <a href="#"><i class="uil uil-home"></i> Oceans </a>
+            <a href="#"><i class="uil uil-home"></i> Mountains </a>
+            <a href="#"><i class="uil uil-home"></i> Ecosystem </a>
+            <a href="#"><i class="uil uil-home"></i> Forest </a>
+            
+          </div>
+        </div>
+        <i class="uil uil-apps nav_menu"></i>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <section class="home ">
+
+        <div class="media_icons">
+            <a href="#"><i class="uil uil-adobe"></i></a>
+            <a href="#"><i class="uil uil-behance"></i></a>
+            <a href="#"><i class="uil uil-dribbble"></i></a>
+        </div>
+        
+      <div class="swiper main_slider">
+        <div class="swiper-wrapper ">
+          <div class="swiper-slide  overlay_color">
+            <img src="images/bg-1.jpg" alt="">
+            <div class="content_wrapper">
+                <h2 class="h_title">Protect and preserve. <span>Season</span></h2>
+                <p>
+                    If we protect Nature, we are going to end up making our lives beautiful and worth living. However, it is becoming increasingly challenging to protect 
+                    Nature and the gifts that we have received.
+                </p>
+                <button class="read_btn">Read More <i class="uil uil-arrow-right"></i> </button>
+            </div>
+          </div>
+          <div class="swiper-slide overlay_color">
+            <img src="images/bg-2.jpg" alt="">
+            <div class="content_wrapper">
+                <h2 class="h_title">Feel it close to you. <span>Season</span></h2>
+                <p>
+                    Mother nature is what sustains us. It is what heals us, and if taken casually, it possesses the ability to hurt us as well. 
+                    Concrete buildings are taking over nature, and the once-green Earth is losing its valor and Beauty.
+                </p>
+                <button class="read_btn">Read More <i class="uil uil-arrow-right"></i> </button>
+            </div>
+          </div>
+          <div class="swiper-slide overlay_color    ">
+            <img src="images/bg-3.jpg" alt="">
+            <div class="content_wrapper">
+                <h2 class="h_title">Our savior. <span>Season</span></h2>
+                <p>
+                    Coming up with such slogans may be time-consuming and cumbersome for many, and that’s why we are here to assist you. Here’s a list of nature slogans for your kind perusal:
+                </p>
+                <button class="read_btn">Read More <i class="uil uil-arrow-right"></i> </button>
+            </div>
+          </div>
+          <div class="swiper-slide overlay_color">
+            <img src="images/bg-4.jpg" alt="">
+            <div class="content_wrapper">
+                <h2 class="h_title">Know nature closely <span>Season</span></h2>
+                <p>
+                    Nature needs no introduction. Now we are the ones that have started depleting nature for our benefit, but we seldom realize that without the presence of Greenery around us, we are more prone to destroying ourselves and our future generations.
+                </p>
+                <button class="read_btn">Read More <i class="uil uil-arrow-right"></i> </button>
+            </div>
+          </div>
+          
+        </div>
+        <div class="swiper-pagination"></div>
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
+      </div>
+      <!-- <div thumbsSlider="" class="swiper main_thumb_slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          </div>
+        </div>
+      </div> -->
+    </section>
+
+    <!-- All js files -->
+
+    <!-- main js -->
+    <script src="js/main.js"></script>
+
+    <!-- swiper js -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".main_thumb_slider", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".main_slider", {
+        spaceBetween: 10,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        // thumbs: {
+        //   swiper: swiper,
+        // },
+      });
+    </script>
+  </body>
+</html>
